@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "translations",
+  "info": {
+    "singularName": "translation",
+    "pluralName": "translations",
+    "displayName": "Translations",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true,
+    "increments": true,
+    "timestamps": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "text"
+    },
+    "value": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "languageCode": {
+      "type": "enumeration",
+      "enum": [
+        "zh-CN",
+        "en-US"
+      ]
+    },
+    "namespace": {
+      "type": "enumeration",
+      "enum": [
+        "Configurator",
+        "General",
+        "UI Elements"
+      ]
+    }
+  }
+}

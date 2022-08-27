@@ -1,0 +1,14 @@
+{
+  "collectionName": "member_types",
+  "info": {
+    "name": "member_type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {}
+}

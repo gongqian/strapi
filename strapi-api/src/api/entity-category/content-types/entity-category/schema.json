@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entity_categories",
+  "info": {
+    "singularName": "entity-category",
+    "pluralName": "entity-categories",
+    "displayName": "entity-category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "entity_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::entity-category.entity-category"
+    },
+    "entity": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::entity.entity",
+      "inversedBy": "entity_categories"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product",
+      "mappedBy": "entity_category"
+    }
+  }
+}

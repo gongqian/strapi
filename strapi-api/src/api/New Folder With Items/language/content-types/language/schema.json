@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "languages",
+  "info": {
+    "singularName": "language",
+    "pluralName": "languages",
+    "displayName": "Language",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "languageCode": {
+      "type": "enumeration",
+      "enum": [
+        "zh-CN",
+        "en-US"
+      ]
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "USA",
+        "China"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "member_types",
+  "info": {
+    "singularName": "member-type",
+    "pluralName": "member-types",
+    "displayName": "Member Type"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "reward_level": {
+      "type": "enumeration",
+      "enum": [
+        "Gold",
+        "Silver",
+        "Platum"
+      ]
+    },
+    "member": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::member.member",
+      "mappedBy": "member_type"
+    }
+  }
+}

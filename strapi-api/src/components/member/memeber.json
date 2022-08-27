@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_profile_memebers",
+  "info": {
+    "displayName": "Memeber"
+  },
+  "options": {},
+  "attributes": {
+    "wechatId": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "registrationDate": {
+      "type": "datetime"
+    },
+    "rewardPoints": {
+      "type": "biginteger"
+    }
+  }
+}

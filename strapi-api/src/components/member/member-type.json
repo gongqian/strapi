@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_member_member_types",
+  "info": {
+    "displayName": "Member Type",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "memberType": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "datetime"
+    }
+  }
+}

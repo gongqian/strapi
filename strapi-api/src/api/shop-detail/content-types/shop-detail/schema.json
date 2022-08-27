@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shop_detail",
+  "info": {
+    "singularName": "shop-detail",
+    "pluralName": "shop-details",
+    "displayName": "shop detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "quarntity": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "float"
+    },
+    "campaign": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::campaign.campaign"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campaign_types",
+  "info": {
+    "singularName": "campaign-type",
+    "pluralName": "campaign-types",
+    "displayName": "campaign-type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "shop",
+        "survey",
+        "call",
+        "bid"
+      ]
+    }
+  }
+}

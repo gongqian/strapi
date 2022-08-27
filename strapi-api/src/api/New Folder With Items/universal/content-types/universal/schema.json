@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "universals",
+  "info": {
+    "singularName": "universal",
+    "pluralName": "universals",
+    "displayName": "universal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "slices": {
+      "type": "dynamiczone",
+      "components": [
+        "slices.top-features",
+        "slices.hero"
+      ]
+    }
+  }
+}

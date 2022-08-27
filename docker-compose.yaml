@@ -1,0 +1,20 @@
+version: '3'
+volumes:
+  docker_data:
+
+services:
+  postgres:
+    # networks:
+    #   - network1
+    hostname: postgres
+    image: postgres
+    environment:
+      POSTGRES_DB: strapi
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: strapi
+    ports:
+      - "5432:5432"
+    volumes:
+      - docker_data:/var/lib/postgresql/data
+      # - ./docker_data:/var/lib/postgresql/data
+

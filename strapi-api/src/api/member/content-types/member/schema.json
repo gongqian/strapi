@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "singularName": "member",
+    "pluralName": "members",
+    "displayName": "Member",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "text"
+    },
+    "reward_points": {
+      "type": "integer"
+    },
+    "member_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::member-type.member-type",
+      "inversedBy": "member"
+    },
+    "campaign": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::campaign.campaign",
+      "inversedBy": "member"
+    }
+  }
+}

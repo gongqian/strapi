@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campaign",
+  "info": {
+    "singularName": "campaign",
+    "pluralName": "campaigns",
+    "displayName": "Campaign",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "visibleToMember": {
+      "type": "boolean"
+    },
+    "started": {
+      "type": "datetime"
+    },
+    "ended": {
+      "type": "datetime"
+    },
+    "viewCount": {
+      "type": "integer"
+    },
+    "participantCount": {
+      "type": "integer"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "trending": {
+      "type": "integer"
+    },
+    "campaign_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::campaign-type.campaign-type"
+    },
+    "member": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::member.member",
+      "inversedBy": "campaign"
+    },
+    "entity": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::entity.entity"
+    }
+  }
+}

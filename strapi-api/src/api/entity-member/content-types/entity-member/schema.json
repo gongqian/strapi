@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entity_members",
+  "info": {
+    "singularName": "entity-member",
+    "pluralName": "entity-members",
+    "displayName": "Entity Member",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "isAdmin": {
+      "type": "boolean"
+    },
+    "isOwner": {
+      "type": "boolean"
+    },
+    "entity": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::entity.entity"
+    },
+    "member": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::member.member"
+    },
+    "isTracking": {
+      "type": "boolean"
+    },
+    "isFavorite": {
+      "type": "boolean"
+    }
+  }
+}

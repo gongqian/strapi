@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_slices_heroes",
+  "info": {
+    "displayName": "hero",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "required": false
+    },
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.edito"
+    }
+  }
+}

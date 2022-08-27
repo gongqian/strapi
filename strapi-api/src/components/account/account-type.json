@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_account_account_types",
+  "info": {
+    "displayName": "Account Type",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shop_response",
+  "info": {
+    "singularName": "shop-response",
+    "pluralName": "shop-responses",
+    "displayName": "shop-response",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "quantity": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "paid",
+        "pickup",
+        "delivered"
+      ]
+    },
+    "shop_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shop-detail.shop-detail"
+    },
+    "member": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::member.member"
+    },
+    "comment": {
+      "type": "string"
+    }
+  }
+}
