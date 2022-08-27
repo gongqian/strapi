@@ -14,11 +14,6 @@ Strapi is a headless CMS used to manage contents such as translations, disclosur
 | :---: | :---: |
 | Dev | http://localhost/admin |
 
-# Strapi translations
-To load data:
-1. Copy files into this folder: '.\public\translationFiles\<<langCode>>\translation.json'
-   where <<langCode>> is in this format: fr-CH (language-Country)
-2. The data will loaded for locals that have no translation for them yet.
 # Resources
 * [Strapi.io](https://strapi.io)
 * [Strapi Introduction](https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html)
